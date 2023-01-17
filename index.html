@@ -1,0 +1,54 @@
+<!DOCTYPE html lang="fr">
+<html>
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fisheye</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/images/logo.png" class="logo" />
+      <h1>Nos photographes</h1>
+    </header>
+    <main id="main">
+      <div class="main_research"></div>
+      <input
+        type="text"
+        id="research"
+        required
+        minlength="3"
+        maxlength="30"
+        size="10"
+      />
+      <div class="secondary_research"></div>
+      <input class="ingredients_" placeholder="Ingrédients" />
+      <p class="ingredients"></p>
+      <input class="apparels_" placeholder="Appareils" />
+      <p class="apparels"></p>
+      <input class="ustensils_" placeholder="Ustensiles" />
+      <p class="ustensils"></p>
+      <div class="recipes_section"></div>
+    </main>
+
+    <!---Model-->
+    <script src="js/models/Recipe.js"></script>
+
+    <!---Template-->
+    <script src="js/templates/RecipeCard.js"></script>
+    <script src="js/templates/IngTemplate.js"></script>
+
+    <!---Api-->
+    <script src="js/api/Api.js"></script>
+
+    <!---Entry point-->
+    <script src="js/pages/index.js"></script>
+
+    <!---Utils-->
+    <script src="js/utils/primarySearch.js"></script>
+  </body>
+</html>
